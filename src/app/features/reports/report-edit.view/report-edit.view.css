@@ -27,12 +27,25 @@
     height: 100%;
 }
 
+.breadcrumb-nav{
+    display: flex;
+    align-items: center;
+}
+
 .breadcrumb-nav a {
+    text-decoration: none;
     font-family: 'Montserrat';
     font-size: 14px;
     font-weight: 700;
     color: #818181;
+
+    cursor: pointer;
 }
+
+.breadcrumb-nav mat-icon{
+    color: var(--stroke);
+}
+
 
 .breadcrumb-nav a:last-child {
     color: #659400;

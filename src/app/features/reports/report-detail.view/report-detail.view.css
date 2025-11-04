@@ -32,16 +32,22 @@
 
 .breadcrumb-nav{
     display: flex;
+    align-items: center;
     flex-wrap: wrap;
 
     gap: 5px;
 }
 
 .breadcrumb-nav a{
+    text-decoration: none;
     font-family: 'Montserrat';
     font-size: 14px;
     font-weight: 700;
 
+    color: var(--stroke);
+}
+
+.breadcrumb-nav mat-icon{
     color: var(--stroke);
 }
 

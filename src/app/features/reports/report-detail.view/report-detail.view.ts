@@ -3,11 +3,12 @@ import { CommonModule } from '@angular/common';
 import { ActivatedRoute, Router, RouterLink } from '@angular/router';
 import { GetReportByIdUseCase } from '../../../core/domain/ports/inbound/report/report.use-case';
 import { ReportEntity } from '../../../core/domain/entities/report/report.entity';
+import { MatIcon } from "@angular/material/icon";
 
 @Component({
   selector: 'app-report-detail-view',
   standalone: true,
-  imports: [CommonModule, RouterLink],
+  imports: [CommonModule, RouterLink, MatIcon],
   templateUrl: './report-detail.view.html',
   styleUrl: './report-detail.view.css'
 })

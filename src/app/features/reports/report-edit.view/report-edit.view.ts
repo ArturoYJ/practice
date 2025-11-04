@@ -8,11 +8,12 @@ import { SearchSpecimensUseCase } from '../../../core/domain/ports/inbound/repor
 import { ReportEntity } from '../../../core/domain/entities/report/report.entity';
 import { Specimen } from '../../../core/domain/entities/report/report.entity';
 import { AuthService } from '../../../infrastructure/adapters/auth/auth.service';
+import { MatIcon } from "@angular/material/icon";
 
 @Component({
   selector: 'app-report-edit',
   standalone: true,
-  imports: [CommonModule, FormsModule, RouterLink, TitleCasePipe],
+  imports: [CommonModule, FormsModule, RouterLink, TitleCasePipe, MatIcon],
   templateUrl: './report-edit.view.html',
   styleUrl: './report-edit.view.css'
 })

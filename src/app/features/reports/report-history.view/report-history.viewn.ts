@@ -5,11 +5,12 @@ import { FormsModule } from '@angular/forms';
 import { GetReportsBySpecimenUseCase, DeleteReportUseCase } from '../../../core/domain/ports/inbound/report/report.use-case';
 import { ReportEntity } from '../../../core/domain/entities/report/report.entity';
 import { AuthService } from '../../../infrastructure/adapters/auth/auth.service';
+import { MatIcon } from "@angular/material/icon";
 
 @Component({
   selector: 'app-report-history',
   standalone: true,
-  imports: [CommonModule, FormsModule, RouterLink],
+  imports: [CommonModule, FormsModule, RouterLink, MatIcon],
   templateUrl: './report-history.view.html',
   styleUrl: './report-history.view.css'
 })

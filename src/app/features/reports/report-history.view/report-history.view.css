@@ -38,10 +38,15 @@
 }
 
 .breadcrumb-nav a{
+    text-decoration: none;
     font-family: 'Montserrat';
     font-size: 14px;
     font-weight: 700;
 
+    color: var(--stroke);
+}
+
+.breadcrumb-nav mat-icon{
     color: var(--stroke);
 }
 
@@ -64,12 +69,6 @@
     font-family: 'Montserrat';
     font-size: 28px;
     font-weight: 700;
-}
-
-.page-name span i{
-    font-weight: 500;
-
-    color: var(--stroke);
 }
 
 .page-name span{
