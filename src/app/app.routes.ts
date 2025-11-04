@@ -1,6 +1,4 @@
 import { Routes } from '@angular/router';
-import { Form } from './register/form/form';
-import { Principal } from './deregister/principal/principal';
 
 export const routes: Routes = [
     {

@@ -10,5 +10,10 @@ export const animalRoutes: Routes = [
         path: 'register_animal',
         loadComponent: () => import('./register-form.view/register-form.view')
             .then(m => m.RegisterFormView)
+    },
+    {
+        path: 'deregister_animal',
+        loadComponent: () => import('./deregister-form.view/deregister-form.view')
+            .then(m => m.DeregisterFormView)
     }
 ];

@@ -1,18 +1,18 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { Clasificacion } from './clasificacion';
+import { DeregisterFormView } from './deregister-form.view';
 
-describe('Clasificacion', () => {
-  let component: Clasificacion;
-  let fixture: ComponentFixture<Clasificacion>;
+describe('DeregisterFormView', () => {
+  let component: DeregisterFormView;
+  let fixture: ComponentFixture<DeregisterFormView>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [Clasificacion]
+      imports: [DeregisterFormView]
     })
     .compileComponents();
 
-    fixture = TestBed.createComponent(Clasificacion);
+    fixture = TestBed.createComponent(DeregisterFormView);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });
