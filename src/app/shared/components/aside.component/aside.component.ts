@@ -9,5 +9,14 @@ import { RouterLink } from '@angular/router';
   styleUrl: './aside.component.css',
 })
 export class AsideComponent {
+  isSubnavOpen = false;
 
+  toggleSubnav(event: Event): void {
+    event.stopPropagation();
+    this.isSubnavOpen = !this.isSubnavOpen;
+  }
+
+  closeSubnav(): void {
+    this.isSubnavOpen = false;
+  }
 }

@@ -11,10 +11,36 @@
                     <mat-icon>pets</mat-icon>
                 </a>
             </li>
-            <li class="nav-item">
-                <a routerLink="">
-                    <mat-icon fontSet="material-symbols-outlined">assignment</mat-icon>   
-                </a>
+            <li class="nav-item subnav-btn" [class.active]="isSubnavOpen">
+                <button type="button" (click)="toggleSubnav($event)">
+                    <mat-icon fontSet="material-symbols-outlined">assignment</mat-icon>
+                </button>
+                <ul class="subnav-list" [class.active]="isSubnavOpen">
+                    <li class="subnav-item">
+                        <a routerLink="" (click)="closeSubnav()">
+                            <span>Clínico</span>
+                            <mat-icon fontSet="material-symbols-outlined">health_cross</mat-icon>
+                        </a>
+                    </li>
+                    <li class="subnav-item">
+                        <a routerLink="" (click)="closeSubnav()">
+                            <span>Conductual</span>
+                            <mat-icon fontSet="material-symbols-outlined">target</mat-icon>
+                        </a>
+                    </li>
+                    <li class="subnav-item">
+                        <a routerLink="" (click)="closeSubnav()">
+                            <span>Alimenticio</span>
+                            <mat-icon fontSet="material-symbols-outlined">pet_supplies</mat-icon>
+                        </a>
+                    </li>
+                    <li class="subnav-item">
+                        <a routerLink="" (click)="closeSubnav()">
+                            <span>Defunción</span>
+                            <mat-icon fontSet="material-symbols-outlined">skull</mat-icon>
+                        </a>
+                    </li>
+                </ul>
             </li>
             <li class="nav-item">
                 <a routerLink="">
