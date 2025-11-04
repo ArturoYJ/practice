@@ -3,8 +3,8 @@ import { Routes } from '@angular/router';
 export const reportRoutes: Routes = [
   {
     path: '',
-    redirectTo: 'clinical',
-    pathMatch: 'full'
+    loadComponent: () => import('./report-form.view/report-form.view').then(m => m.ReportFormView),
+    data: { reportType: 1 }
   },
   {
     path: 'clinical',
@@ -36,6 +36,6 @@ export const reportRoutes: Routes = [
   },
   {
     path: 'history',
-    loadComponent: () => import('./report-history.view/report-history.view').then(m => m.ReportHistoryView)
+    loadComponent: () => import('./report-history.view/report-history.viewn').then(m => m.ReportHistoryView)
   }
 ];
