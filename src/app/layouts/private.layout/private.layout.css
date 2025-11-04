@@ -46,6 +46,4 @@ main{
     grid-row: 2 / 3;
 
     overflow-y: auto;
-
-    z-index: -1000;
 }

@@ -158,6 +158,8 @@
     background: #FFFFFF;
     border-radius: 6px;
     box-shadow: 2px 2px 4px 2px #0000004D;
+
+    z-index: -1000;
 }
 
 .form-container form {

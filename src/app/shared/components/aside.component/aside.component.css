@@ -5,6 +5,8 @@
     background: #84BC0D;
 
     border-radius: 8px;
+    
+    z-index: 3000;
 }
 
 nav{

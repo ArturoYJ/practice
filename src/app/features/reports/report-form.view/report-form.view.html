@@ -10,7 +10,7 @@
 
   <div class="search-container">
     <div class="search">
-      <label for="search"><i class="ti ti-search"></i></label>
+      <label for="search"><mat-icon>search</mat-icon></label>
       <input type="text" class="search-input" id="search" placeholder="Buscar por número de inventario PLXXX, MXXX"
         [value]="searchQuery()" (input)="onSearchInput($event)" (blur)="hideResults()">
     </div>

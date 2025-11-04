@@ -7,11 +7,12 @@ import { CreateReportUseCase } from '../../../core/domain/ports/inbound/report/r
 import { SearchSpecimensUseCase } from '../../../core/domain/ports/inbound/report/specimen.use-case';
 import { Specimen } from '../../../core/domain/entities/report/report.entity';
 import { AuthService } from '../../../infrastructure/adapters/auth/auth.service';
+import { MatIcon } from "@angular/material/icon";
 
 @Component({
   selector: 'app-report-form',
   standalone: true,
-  imports: [CommonModule, FormsModule, RouterLink, TitleCasePipe],
+  imports: [CommonModule, FormsModule, RouterLink, TitleCasePipe, MatIcon],
   templateUrl: './report-form.view.html',
   styleUrl: './report-form.view.css'
 })
