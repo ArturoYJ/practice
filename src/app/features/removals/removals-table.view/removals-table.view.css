@@ -36,7 +36,6 @@
     font-size: 14px;
     font-weight: 700;
 
-    text-decoration: none;
     color: var(--stroke);
 }
 
@@ -48,36 +47,6 @@
     font-family: 'Montserrat';
     font-size: 28px;
     font-weight: 700;
-}
-
-.new-animal-btn {
-    flex: 1;
-
-    display: flex;
-    justify-content: end;
-    align-items: center;
-
-    height: 100%;
-}
-
-.new-animal-btn a {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
-    width: 48px;
-    height: 48px;
-
-    background-color: var(--main-green);
-
-    text-decoration: none;
-    color: var(--night);
-
-    border-radius: clamp(6px, 10px, 12px);
-}
-
-.new-animal-btn a i {
-    font-size: 28px;
 }
 
 .controls {
@@ -264,7 +233,7 @@ tbody tr td{
     overflow: hidden;
 }
 
-tbody tr td:last-child{
+tbody tr td:first-child, tbody tr td:last-child{
     justify-content: center;
 
     padding-left: 0;
@@ -326,7 +295,7 @@ tbody tr td:last-child{
     border-bottom: var(--stroke) solid 1px;
 
     cursor: pointer;
-    
+
     font-family: 'Poppins';
     font-size: 14px;
 }
@@ -335,7 +304,7 @@ tbody tr td:last-child{
     font-size: 20px;
 }
 
-.actions-menu a:last-child{
+.actions-menu button:last-child, .actions-menu a:last-child{
     border: none;
 }
 
@@ -399,7 +368,7 @@ tbody tr td:last-child{
     display: flex;
     justify-content: center;
     align-items: center;
-    
+
     padding: 10px;
 
     background-color: var(--white);
@@ -436,20 +405,4 @@ tbody tr td:last-child{
 .page-btn:disabled {
     opacity: 0.5;
     cursor: not-allowed;
-}
-
-.new-animal-btn a{
-    gap: 10px;
-
-    width: auto;
-
-    padding: 0 20px;
-}
-
-.new-animal-btn a span {
-    display: flex;
-
-    font-family: 'Poppins';
-    font-size: 14px;
-    font-weight: 500;
 }

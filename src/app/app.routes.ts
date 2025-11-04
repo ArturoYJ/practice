@@ -1,7 +1,5 @@
 import { Routes } from '@angular/router';
 
-import { PrivateLayout } from './layouts/private.layout/private.layout';
-
 export const routes: Routes = [
     {
         path: '',
@@ -17,6 +15,11 @@ export const routes: Routes = [
                 path: 'animals',
                 loadChildren: () => import('./features/animals/animals.routes')
                     .then(m => m.animalRoutes)
+            },
+            {
+                path: 'removals',
+                loadChildren: () => import('./features/removals/removals.routes')
+                    .then(m => m.removalsRoutes)
             }
         ]
     }
